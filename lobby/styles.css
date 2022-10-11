@@ -19,6 +19,7 @@ body {
         "Random Mine Figma"
     ;
     overflow: hidden;
+    height: 100%;
     background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
     grid-gap: 10px;
     padding: 10px;
@@ -95,4 +96,37 @@ button:hover {
     grid-area: Mine;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+}
+
+
+@media (max-width:600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Title Title Title"
+        "Random Mine Figma"
+    ;
+        /*gap: 10px;*/
+        /*background-color: grey;
+        /*padding: 10px;*/
+        height:90vh;
+    }
+
+    .container>div {
+        text-align: center;
+        display: inline-block;
+        font-weight: 400;
+        padding: 10px;
+    }
+    :root {
+        --title-font: 100px;
+        --time-font: 48px;
+        --para-font: 24px;
+        --footer-font: 18px;
+        --button-font: 24px;
+        --grid-color: none;
+        --time-color: #2400025a;
+    }
 }

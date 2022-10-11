@@ -90,11 +90,13 @@ body {
 
 .Time1 {
     grid-area: Time1;
+    margin-top:auto;
     font-size: var(--time-font);
     background-color: var(--time-color);
 }
 
 .Sidebar1L {
+    margin-top:auto;
     grid-area: Sidebar1L;
     background-color: var(--grid-color);
 }
@@ -106,17 +108,20 @@ body {
 }
 
 .Sidebar1R {
+    margin-top:auto;
     grid-area: Sidebar1R;
     background-color: var(--grid-color);
 }
 
 .Time2 {
     grid-area: Time2;
+    margin-top:auto;
     font-size: var(--time-font);
     background-color: var(--time-color);
 }
 
 .Sidebar2L {
+    margin-top:auto;
     grid-area: Sidebar2L;
     background-color: var(--grid-color);
 }
@@ -128,17 +133,21 @@ body {
 }
 
 .Sidebar2R {
+    margin-top:auto;
     grid-area: Sidebar2R;
     background-color: var(--grid-color);
 }
 
 .Time3 {
     grid-area: Time3;
+    margin-top:auto;
+
     font-size: var(--time-font);
     background-color: var(--time-color);
 }
 
 .Sidebar3L {
+    margin-top:auto;
     grid-area: Sidebar3L;
     background-color: var(--grid-color);
 }
@@ -150,17 +159,21 @@ body {
 }
 
 .Sidebar3R {
+    margin-top:auto;
     grid-area: Sidebar3R;
     background-color: var(--grid-color);
 }
 
 .Time4 {
     grid-area: Time4;
+    margin-top:auto;
+
     font-size: var(--time-font);
     background-color: var(--time-color);
 }
 
 .Sidebar4L {
+    margin-top:auto;
     grid-area: Sidebar4L;
     background-color: var(--grid-color);
 }
@@ -172,6 +185,7 @@ body {
 }
 
 .Sidebar4R {
+    margin-top:auto;
     grid-area: Sidebar4R;
     background-color: var(--grid-color);
 }
@@ -235,7 +249,7 @@ button:hover {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 3fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr 1fr;
         grid-template-areas:
             "Title Title Title Title Title"
             "Sidebar1L Time1 Time1 Time1 Sidebar1R"
@@ -268,6 +282,9 @@ button:hover {
         --button-font: 24px;
         --grid-color: none;
         --time-color: #2400025a;
+    }
+    .Title{
+        margin-top:50px;
     }
     .sticky {
         visibility: hidden;
