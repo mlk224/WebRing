@@ -66,12 +66,6 @@ body {
     background-color: var(--grid-color);
 }
 
-.None {
-    grid-area: None;
-    font-size: var(--button-font);
-    background-color: var(--grid-color);
-}
-
 button {
     color: white;
     border-color: white;
