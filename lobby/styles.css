@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+.container {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Title Title Title"
+        "Random Mine Figma"
+    ;
+    overflow: hidden;
+    background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.container>div {
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    padding: 10px;
+}
+
+:root {
+    --title-font: 120px;
+    --time-font: 48px;
+    --para-font: 24px;
+    --footer-font: 18px;
+    --button-font: 24px;
+    --grid-color: none;
+    --time-color: #2400025a;
+}
+
+.sticky {
+    z-index: 100;
+    position: absolute;
+    grid-area: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.sticky-dark {
+    z-index: 1000;
+    opacity: 0.2;
+    position: absolute;
+    grid-area: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.Title {
+    grid-area: Title;
+    font-size: var(--title-font);
+    background-color: var(--grid-color);
+}
+
+.None {
+    grid-area: None;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+button {
+    color: white;
+    border-color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+
+
+.Random {
+    grid-area: Random;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Figma {
+    grid-area: Figma;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Mine {
+    grid-area: Mine;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}

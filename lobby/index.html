@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WebRing Home</title>
+</head>
+
+<body>
+    <img class="sticky" src="/images/CornFields.svg" alt="Corn Fields">
+    <img class="sticky-dark" src="/images/CornFieldsDark.svg" alt="Corn Fields Darkened">
+    
+    <div class="container">
+        <div class="Title">Web Ring Home</div>
+        <div class="None"></div>
+        <a href="javascript:randomlinks()" class="Random"><button class="Random">Random</button></a>
+        <a href="https://www.figma.com/file/TUXp0ZuHszsvfwWROxAqHy/WebRing?node-id=0%3A1" target="_blank" class="Figma"><button class="Figma">Figma</button></a>
+        <a href="https://msh223.github.io/WebRing/" class="Mine"><button class="Mine">My Story</button></a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script>
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*9)
+            var links=new Array()
+            links[0]="http://"
+            links[1]="https://ayc325.github.io/DES070/Project3/index.html"
+            links[2]="http://"
+            links[3]="https://"
+            links[4]="http://"
+            links[5]="http://"
+            links[6]="https://msh223.github.io/WebRing/"
+            links[7]="https://mlk224.github.io/WebRing/"
+            links[8]="http://"
+            links[9]="http://"
+        window.location=links[myrandom] 
+        }
+    </script>
+</body>
+</html>

@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>WebRingStory</title>
+    <title>WebRing</title>
 </head>
+
 <body>
-    <p class="title">Web Ring</p>
-    <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum quam, corrupti voluptas neque doloremque, fugit earum ipsam, molestias quibusdam ratione perspiciatis. Sunt veritatis in nulla, animi ratione itaque perspiciatis.</p>
-    <img class="backArrow" src="/images/backArrow.svg" alt="Back Arrow">        '
-    <img class="nextArrow" src="/images/nextArrow.svg" alt="Next Arrow">
     <img class="sticky" src="/images/CornFields.svg" alt="Corn Fields">
+    <img class="sticky-dark" src="/images/CornFieldsDark.svg" alt="Corn Fields Darkened">
+    
+    <div class="container">
+        <div class="Title">Web Ring</div>
+
+        <div class="Time1">6:00 PM</div>
+        <div class="Sidebar1L">Sidebar1L</div>
+        <div class="Para1">
+            The engine sputters, the power surges - the car comes to a stop. Ivy passed the last gas station 30 miles
+            back but thought she could make it through this midwest deadzone. Ivy has no cell service, no fuel, and 12
+            more miles until her final destination.
+            <br><br>It is Halloween night and Ivy promised her brother that she would be home for (big ceremony).
+            Knowing she had no other choice, Ivy got out of her car and started to walk. She walked between the gravel
+            roads and the unkept cornfield.
+            <br><br>Maybe it was because it was Halloween night or maybe it was because Ivy was alone and vulnerable,
+            but Ivy began to feel chills down her spine. She felt as if she was being watched.
+        </div>
+        <div class="Sidebar1R">Sidebar1R</div>
+
+        <div class="Time2">7:00 PM</div>
+        <div class="Sidebar2L">Sidebar2L</div>
+        <div class="Para2">“Shhhhh”
+            Ivy freezes. Did someone say something to her? It must have been a gust of wind.
+            <br><br>“Sssssssssssssssstop”
+            <br><br>The echoes grow louder as Ivy continues.
+            <br><br>Ivy stops. The wind stopped as well. Uneasy, Ivy begins to walk faster. Now she begins to run.
+            <br><br>“Shhhhh”
+            <br><br>The wind talks to Ivy again. Perhaps it is best if Ivy just waits in place until. She must not break
+            the silence.
+        </div>
+        <div class="Sidebar2R">Sidebar2R</div>
+
+        <div class="Time3">8:00 PM</div>
+        <div class="Sidebar3L">Sidebar3L</div>
+        <div class="Para3">Ivy stops and looks at her watch and notices that it reads 8:00pm. Despite the mysterious
+            wind, she must continue walking or else she won’t make it to (name). Only 2 more miles to go.
+            Apprehensively, she decides to run once more.
+            <br><br>The wind roars and rips through the corn, ghostly echoes grow around Ivy as she runs towards the
+            dimly lit city ahead.
+            <br><br>Beads of sweat drip down Ivy’s face as she runs on. Suddenly, she is grabbed and is pulled towards
+            the cornfields - she looks back and sees a foggy figure towering over the road. This is what has been
+            talking to her, this is what she has been running from.
+        </div>
+        <div class="Sidebar3R">Sidebar3R</div>
+
+        <div class="Time4">9:00 PM</div>
+        <div class="Sidebar4L">Sidebar4L</div>
+        <div class="Para4">Ivy covers her mouth to quiet herself down and the ghostly grasp lets go of her but does not
+            fade away. She notices the city is only a sprint away.
+            <br><br>The foggy figure roars and follows Ivy close behind. The figure extends its phantom-like arms but
+            not before Ivy grabbed a jack-o-lantern near the entrance to the city. Ivy throws the fiery pumpkin at the
+            figure and it lets out a scorching scream. The fog burns away and the wind comes to a stop.
+            <br><br>At last, terror-stricken and perspiring, she had arrived… just in time for her brother.
+        </div>
+        <div class="Sidebar4R">Sidebar4R</div>
+
+        <div class="Footer">By Mika Kizuka</div>
+
+        <a href="javascript:randomlinks()" class="Random"><button class="Random">Random</button></a>
+        <a href="javascript:randomlinks()" class="Home"><button class="Home">Home</button></a>
+        <a href="https://www.figma.com/file/TUXp0ZuHszsvfwWROxAqHy/WebRing?node-id=0%3A1" target="_blank" class="Figma"><button class="Figma">Figma</button></a>
+        <a href="https://msh223.github.io/WebRing/" class="Previous"><button class="Previous">Previous</button></a>
+        <a href="https://msh223.github.io/WebRing/" class="Next"><button class="Next">Next</button></a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script>
+        function randomlinks(){
+            var myrandom=Math.round(Math.random()*9)
+            var links=new Array()
+            links[0]="http://"
+            links[1]="https://ayc325.github.io/DES070/Project3/index.html"
+            links[2]="http://"
+            links[3]="https://"
+            links[4]="http://"
+            links[5]="http://"
+            links[6]="https://msh223.github.io/WebRing/"
+            links[7]="https://mlk224.github.io/WebRing/"
+            links[8]="http://"
+            links[9]="http://"
+        window.location=links[myrandom] 
+        }
+    </script>
 </body>
 </html>

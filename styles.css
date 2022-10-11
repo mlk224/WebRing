@@ -1,155 +1,278 @@
-body{ 
-    width: 1vw;
-    height: 2986px;
-    overflow-y: scroll;
-    background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} 
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
 .container {
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     grid-auto-flow: row;
     grid-template-areas:
-    "backArrow" "title" "title" "title" "title"
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT" 
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT"     
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT"    
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT" 
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT"  
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT" 
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT" 
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT"     
-    "bodyT" "bodyT" "bodyT" "bodyT" "bodyT" 
-    "nextArrow" "nextArrow" "nextArrow" "nextArrow" "nextArrow" 
-    "sticky" "sticky" "sticky" "sticky" "sticky";
-    height:100vh;
-    overflow:hidden;
+        "Title Title Title Title Title"
+        "Title Title Title Title Title"
+        "Title Title Title Title Title"
+        "Title Title Title Title Title"
+        "Title Title Title Title Title"
+        "Title Title Title Title Title"
+        "Time1 Time1 Time1 Time1 Time1"
+        "Sidebar1L Para1 Para1 Para1 Sidebar1R"
+        "Sidebar1L Para1 Para1 Para1 Sidebar1R"
+        "Sidebar1L Para1 Para1 Para1 Sidebar1R"
+        "Time2 Time2 Time2 Time2 Time2"
+        "Sidebar2L Para2 Para2 Para2 Sidebar2R"
+        "Sidebar2L Para2 Para2 Para2 Sidebar2R"
+        "Sidebar2L Para2 Para2 Para2 Sidebar2R"
+        "Time3 Time3 Time3 Time3 Time3"
+        "Sidebar3L Para3 Para3 Para3 Sidebar3R"
+        "Sidebar3L Para3 Para3 Para3 Sidebar3R"
+        "Sidebar3L Para3 Para3 Para3 Sidebar3R"
+        "Time4 Time4 Time4 Time4 Time4"
+        "Sidebar4L Para4 Para4 Para4 Sidebar4R"
+        "Sidebar4L Para4 Para4 Para4 Sidebar4R"
+        "Sidebar4L Para4 Para4 Para4 Sidebar4R"
+        "Footer Footer Footer Footer Footer"
+        "Home Random Figma Previous Next"
+    ;
+    overflow: hidden;
+    background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
+    grid-gap: 10px;
     padding: 10px;
 }
-.container>div{
-    text-align:center;
-    vertical-align:middle;
+
+.container>div {
+    text-align: center;
+    display: inline-block;
     font-weight: 400;
-    line-height: 110px;
+    padding: 10px;
 }
-.title{
-    position:absolute;
-    text-align:center;
-    font-size:96px;
+
+:root {
+    --title-font: 120px;
+    --time-font: 48px;
+    --para-font: 24px;
+    --footer-font: 18px;
+    --button-font: 24px;
+    --grid-color: none;
+    --time-color: #2400025a;
 }
-.body{
-    position:absolute;
-    text-align:center;
-    font-size:20px;
-}
-.backArrow{
-    position:absolute;
-    text-align:center;
-}
-.nextArrow{
-    position:absolute;
-    text-align:center;
-}
+
 .sticky {
-    position:absolute;
+    z-index: 100;
+    position: absolute;
     grid-area: sticky;
-    position:fixed;
-    bottom:0px;
-    left:0px;
-}
-/*.backArrow {
-    grid-area: backArrow;
-    background-color:#94D2Bd;
-}
-.title {
-    grid-area: title;
-    background-color:#94D2Bd;
-}
-.body {
-    grid-area: body;
-    background-color:#94D2Bd;
-}
-.nextArrow {
-    grid-area: nextArrow;
-    background-color:#94D2Bd;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 
-
-
-/* colors: https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
-/*
-.Small1 {
-    grid-area: Small1;
-    background-color:#94D2Bd;
-}
-.Small2 {
-    grid-area: Small2;
-    background-color:#94D2Bd;
-}.Small3 {
-    grid-area: Small3;
-    background-color:#94D2Bd;
-}
-.Small4 {
-    grid-area: Small4;
-    background-color:#94D2Bd;
-}
-.Med1 {
-    grid-area: Med1;
-    background-color:#0A9396;
-}
-.Med2 {
-    grid-area: Med2;
-    background-color:#0A9396;
-}
-.Lg {
-    grid-area: Lg;
-    background-color:#005F73;
+.sticky-dark {
+    z-index: 1000;
+    opacity: 0.2;
+    position: absolute;
+    grid-area: sticky;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
 }
 
-.Main{
-    grid-area: Main;
-    background-color:#CA6702;
+.Title {
+    grid-area: Title;
+    font-size: var(--title-font);
+    background-color: var(--grid-color);
 }
-.Sidebar{
-    grid-area: Sidebar;
-    background-color:#E9D8A6;
+
+.Time1 {
+    grid-area: Time1;
+    font-size: var(--time-font);
+    background-color: var(--time-color);
 }
-.Quote{
-    grid-area: Quote;
-    background-color:#EE9B00;
+
+.Sidebar1L {
+    grid-area: Sidebar1L;
+    background-color: var(--grid-color);
 }
-.Footer{
+
+.Para1 {
+    grid-area: Para1;
+    font-size: var(--para-font);
+    background-color: var(--grid-color);
+}
+
+.Sidebar1R {
+    grid-area: Sidebar1R;
+    background-color: var(--grid-color);
+}
+
+.Time2 {
+    grid-area: Time2;
+    font-size: var(--time-font);
+    background-color: var(--time-color);
+}
+
+.Sidebar2L {
+    grid-area: Sidebar2L;
+    background-color: var(--grid-color);
+}
+
+.Para2 {
+    grid-area: Para2;
+    font-size: var(--para-font);
+    background-color: var(--grid-color);
+}
+
+.Sidebar2R {
+    grid-area: Sidebar2R;
+    background-color: var(--grid-color);
+}
+
+.Time3 {
+    grid-area: Time3;
+    font-size: var(--time-font);
+    background-color: var(--time-color);
+}
+
+.Sidebar3L {
+    grid-area: Sidebar3L;
+    background-color: var(--grid-color);
+}
+
+.Para3 {
+    grid-area: Para3;
+    font-size: var(--para-font);
+    background-color: var(--grid-color);
+}
+
+.Sidebar3R {
+    grid-area: Sidebar3R;
+    background-color: var(--grid-color);
+}
+
+.Time4 {
+    grid-area: Time4;
+    font-size: var(--time-font);
+    background-color: var(--time-color);
+}
+
+.Sidebar4L {
+    grid-area: Sidebar4L;
+    background-color: var(--grid-color);
+}
+
+.Para4 {
+    grid-area: Para4;
+    font-size: var(--para-font);
+    background-color: var(--grid-color);
+}
+
+.Sidebar4R {
+    grid-area: Sidebar4R;
+    background-color: var(--grid-color);
+}
+
+.Footer {
     grid-area: Footer;
-    background-color:#9B2226;
-    padding:20px;
-    line-height: 20px !important;
+    font-size: var(--footer-font);
+    background-color: var(--grid-color);
 }
-.Header{
-    grid-area: Header;
-    background-color:#AE2012;
+
+
+button {
+    color: white;
+    border-color: white;
+    font-family: 'DM Serif Display', serif;
 }
-.Img{
-    grid-area: Img;
-    background-color:#ae511f;
-} */
-/*
+
+button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.7s;
+}
+
+
+.Home {
+    grid-area: Home;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Random {
+    grid-area: Random;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Figma {
+    grid-area: Figma;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Previous {
+    grid-area: Previous;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+.Next {
+    grid-area: Next;
+    font-size: var(--button-font);
+    background-color: var(--grid-color);
+}
+
+
+
+
+
+
 @media (max-width:600px) {
-    .grid-container {
+    .container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 3fr) 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 5fr 1fr 1fr;
         grid-template-areas:
-        "Small Small Small Small Med Med Med Med Small Small Small Small"
-        "Header Header Header Header Header Header Header Header Header Header Img Img"
-        "Main Main Main Main Main Main Main Main Sidebar Sidebar Sidebar Sidebar"
-        "Quote Quote Quote Quote Quote Quote Quote Quote Sidebar Sidebar Sidebar Sidebar"
-        "Small Small Small Med Med Med Small Small Small Lg Lg Lg"
-        "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+            "Title Title Title Title Title"
+            "Sidebar1L Time1 Time1 Time1 Sidebar1R"
+            "Para1 Para1 Para1 Para1 Para1"
+            "Sidebar2L Time2 Time2 Time2 Sidebar2R"
+            "Para2 Para2 Para2 Para2 Para2"
+            "Sidebar3L Time3 Time3 Time3 Sidebar3R"
+            "Para3 Para3 Para3 Para3 Para3"
+            "Sidebar4L Time4 Time4 Time4 Sidebar4R"
+            "Para4 Para4 Para4 Para4 Para4"
+            "Footer Footer Footer Footer Footer"
+            "Home Random Figma Previous Next"
         ;
-        height:100vh;
         /*gap: 10px;*/
         /*background-color: grey;
         /*padding: 10px;*/
-    /*}
-} */
+    }
+
+    .container>div {
+        text-align: center;
+        display: inline-block;
+        font-weight: 400;
+        padding: 10px;
+    }
+    :root {
+        --title-font: 120px;
+        --time-font: 48px;
+        --para-font: 24px;
+        --footer-font: 18px;
+        --button-font: 24px;
+        --grid-color: none;
+        --time-color: #2400025a;
+    }
+    .sticky {
+        visibility: hidden;
+    }
+    .sticky-dark{
+        visibility: hidden;
+    }
+}
