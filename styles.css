@@ -283,6 +283,10 @@ button:hover {
         --grid-color: none;
         --time-color: #2400025a;
     }
+    img{
+        size:auto;
+    }
+
     .Title{
         margin-top:50px;
     }
