@@ -40,6 +40,7 @@ body {
         "Home Random Figma Previous Next"
     ;
     overflow: hidden;
+    width:100vw;
     background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
     grid-gap: 10px;
     padding: 10px;
