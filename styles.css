@@ -7,7 +7,7 @@ body {
     color: white;
     text-align: center;
     font-family: 'DM Serif Display', serif;
-    background-image: url("images/stars.webp");
+    background-image: url("images\stars.webp");
     background-size: cover;
     /* Resize the background image to cover the entire container */
     background-repeat: no-repeat;
