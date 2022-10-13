@@ -100,6 +100,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar1L;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Para1 {
@@ -112,6 +114,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar1R;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Time2 {
@@ -125,6 +129,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar2L;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Para2 {
@@ -137,6 +143,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar2R;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Time3 {
@@ -151,6 +159,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar3L;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Para3 {
@@ -163,6 +173,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar3R;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Time4 {
@@ -177,6 +189,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar4L;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Para4 {
@@ -189,6 +203,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar4R;
     background-color: var(--grid-color);
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .Footer {
@@ -215,30 +231,35 @@ button:hover {
     grid-area: Home;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Random {
     grid-area: Random;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Figma {
     grid-area: Figma;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Previous {
     grid-area: Previous;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Next {
     grid-area: Next;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 
