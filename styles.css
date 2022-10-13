@@ -386,8 +386,8 @@ button:hover {
     }
 
     :root {
-        --title-font: 120px;
-        --time-font: 48px;
+        --title-font: 96px;
+        --time-font: 32px;
         --para-font: 24px;
         --footer-font: 18px;
         --button-font: 24px;
@@ -415,6 +415,9 @@ button:hover {
         visibility:hidden;
     }
 
+    img{
+        visibility: hidden;
+    }
     .Random, .Home, .Previous, .Next {
         font-size:18px;
     }
