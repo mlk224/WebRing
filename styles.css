@@ -19,29 +19,17 @@ body {
     z-index: 10;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(23, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
     grid-template-areas:
         "Title Title Title Title Title"
-        "Title Title Title Title Title"
-        "Title Title Title Title Title"
-        "Title Title Title Title Title"
-        "Title Title Title Title Title"
-        "Time1 Time1 Time1 Time1 Time1"
+        "None1 None1 Time1 None2 None2"
         "Sidebar1L Para1 Para1 Para1 Sidebar1R"
-        "Sidebar1L Para1 Para1 Para1 Sidebar1R"
-        "Sidebar1L Para1 Para1 Para1 Sidebar1R"
-        "Time2 Time2 Time2 Time2 Time2"
+        "None3 None3 Time2 None4 None4"
         "Sidebar2L Para2 Para2 Para2 Sidebar2R"
-        "Sidebar2L Para2 Para2 Para2 Sidebar2R"
-        "Sidebar2L Para2 Para2 Para2 Sidebar2R"
-        "Time3 Time3 Time3 Time3 Time3"
+        "None5 None5 Time3 None6 None6"
         "Sidebar3L Para3 Para3 Para3 Sidebar3R"
-        "Sidebar3L Para3 Para3 Para3 Sidebar3R"
-        "Sidebar3L Para3 Para3 Para3 Sidebar3R"
-        "Time4 Time4 Time4 Time4 Time4"
-        "Sidebar4L Para4 Para4 Para4 Sidebar4R"
-        "Sidebar4L Para4 Para4 Para4 Sidebar4R"
+        "None7 None7 Time4 None8 None8"
         "Sidebar4L Para4 Para4 Para4 Sidebar4R"
         "Footer Footer Footer Footer Footer"
         "Home Random Figma Previous Next"
