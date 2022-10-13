@@ -416,7 +416,8 @@ button:hover {
     }
 
     img{
-        visibility: hidden;
+        visibility: hidden; 
+        
     }
     .Random, .Home, .Previous, .Next {
         font-size:18px;
