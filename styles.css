@@ -1,11 +1,18 @@
 * {
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
     color: white;
     text-align: center;
     font-family: 'DM Serif Display', serif;
+    background-image: url("images/stars.webp");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
 .container {
@@ -40,8 +47,9 @@ body {
         "Home Random Figma Previous Next"
     ;
     overflow: hidden;
-    width:100vw;
-    background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
+    width: 98vw;
+    /*background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);*/
+    background: linear-gradient(180deg, rgba(217, 125, 12, 0.8) 0%, rgba(165, 48, 5, 0.8) 35.42%, rgba(111, 1, 0, 0.8) 67.19%, rgba(36, 0, 2, 0.8) 100%);
     grid-gap: 10px;
     padding: 10px;
 }
@@ -82,6 +90,17 @@ body {
     left: 0px;
 }
 
+#car {
+    z-index:1001;
+    position: absolute;
+    grid-area: sticky;
+    position: fixed;
+    left: -1000px;
+    bottom:0px;
+        /* <- not relevant for the animation */
+}
+
+
 .Title {
     margin-top: 150px;
     grid-area: Title;
@@ -100,7 +119,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar1L;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -114,7 +134,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar1R;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -129,7 +150,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar2L;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -143,7 +165,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar2R;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -159,7 +182,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar3L;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -173,7 +197,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar3R;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -189,7 +214,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar4L;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -203,7 +229,8 @@ body {
     margin-top: auto;
     grid-area: Sidebar4R;
     background-color: var(--grid-color);
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
 }
 
@@ -231,35 +258,35 @@ button:hover {
     grid-area: Home;
     font-size: var(--button-font);
     background-color: var(--grid-color);
-    cursor:default;
+    cursor: default;
 }
 
 .Random {
     grid-area: Random;
     font-size: var(--button-font);
     background-color: var(--grid-color);
-    cursor:default;
+    cursor: default;
 }
 
 .Figma {
     grid-area: Figma;
     font-size: var(--button-font);
     background-color: var(--grid-color);
-    cursor:default;
+    cursor: default;
 }
 
 .Previous {
     grid-area: Previous;
     font-size: var(--button-font);
     background-color: var(--grid-color);
-    cursor:default;
+    cursor: default;
 }
 
 .Next {
     grid-area: Next;
     font-size: var(--button-font);
     background-color: var(--grid-color);
-    cursor:default;
+    cursor: default;
 }
 
 
@@ -363,8 +390,9 @@ button:hover {
         --grid-color: none;
         --time-color: #2400025a;
     }
-    .Figma{
-        display:none;
+
+    .Figma {
+        display: none;
     }
 
     .Title {

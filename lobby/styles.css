@@ -6,6 +6,10 @@ body {
     color: white;
     text-align: center;
     font-family: 'DM Serif Display', serif;
+    background-image: url("images/stars.webp");
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -20,7 +24,7 @@ body {
     ;
     overflow: hidden;
     height: 100%;
-    background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);
+    background: linear-gradient(180deg, rgba(217, 125, 12, 0.8) 0%, rgba(165, 48, 5, 0.8) 35.42%, rgba(111, 1, 0, 0.8) 67.19%, rgba(36, 0, 2, 0.8) 100%);
     grid-gap: 10px;
     padding: 10px;
 }
@@ -53,7 +57,7 @@ body {
 
 .sticky-dark {
     z-index: 1000;
-    opacity: 0.2;
+    opacity: 0.0;
     position: absolute;
     grid-area: sticky;
     position: fixed;
@@ -71,6 +75,7 @@ button {
     color: white;
     border-color: white;
     font-family: 'DM Serif Display', serif;
+    cursor:default;
 }
 
 button:hover {
@@ -84,22 +89,28 @@ button:hover {
     grid-area: Random;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Figma {
     grid-area: Figma;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 .Mine {
     grid-area: Mine;
     font-size: var(--button-font);
     background-color: var(--grid-color);
+    cursor:default;
 }
 
 
 @media (max-width:600px) {
+    body{
+        overflow-y:hidden;
+    }
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
