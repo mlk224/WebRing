@@ -38,7 +38,7 @@ body {
         "Home Random Figma Previous Next"
     ;
     overflow: hidden;
-    width: 98vw;
+    width: 100vw;
     /*background: linear-gradient(180deg, #D97D0C 0%, #A53005 35.42%, #6F0100 67.19%, #240002 100%);*/
     background: linear-gradient(180deg, rgba(217, 125, 12, 0.8) 0%, rgba(165, 48, 5, 0.8) 35.42%, rgba(111, 1, 0, 0.8) 67.19%, rgba(36, 0, 2, 0.8) 100%);
     grid-gap: 10px;
