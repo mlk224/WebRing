@@ -93,7 +93,7 @@ body {
 
 
 .Title {
-    margin-top: 150px;
+    margin-top: 30vh;
     grid-area: Title;
     font-size: var(--title-font);
     background-color: var(--grid-color);
